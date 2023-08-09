@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chat App</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" href="icons8-chat-message-96.png" type="image/x-icon" />
+  </head>
+  <body>
+    <audio id="notification-sound" src="Notification Sound.mp3"></audio>
+     <!-- Logo and Title -->
+     <div class="logo-container">
+        <img src="icons8-chat-message-96.png" alt="Chat App Logo" class="logo" />
+        <h1 class="logo-title">Chat App</h1>
+      </div>
+
+    <!-- Person selector: this contains buttons for user to select whether to chat as Kleindy or Angelica May -->
+    <div class="person-selector">
+      <button class="button person-selector-button active-person" id="john-selector">Kleindy Duterte</button>
+      <button class="button person-selector-button" id="jane-selector">Angelica May Yap</button>
+    </div>
+    <div class="chat-container">
+      <h2 class="chat-header">Kleindy Chatting...</h2>
+
+      <div class="chat-messages">
+        <div class="message blue-bg">
+          <div class="message-sender">Kleindy Duterte</div>
+          <div class="message-text">HI Mahal, I love you 😘😘💗</div>
+          <div class="message-timestamp">10:30 AM</div>
+        </div>
+        <div class="message gray-bg">
+          <div class="message-sender">Angelica May Yap</div>
+          <div class="message-text">Hello Mahal, I love you too 😘💗</div>
+          <div class="message-timestamp">10:35 AM</div>
+        </div>
+      </div>
+
+      <form class="chat-input-form">
+        <input type="text" class="chat-input" required placeholder="Type here, Kleindy..." />
+        <button type="submit" class="button send-button">Send</button>
+      </form>
+      <button class="button clear-chat-button">Clear Chat</button>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
